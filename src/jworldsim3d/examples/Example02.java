@@ -1,4 +1,4 @@
-package examples;
+package jworldsim3d.examples;
 
 import jworldsim3d.classes.wEngine;
 import jworldsim3d.classes.wFont;
@@ -11,6 +11,7 @@ import jworldsim3d.classes.wTexture;
 import jworldsim3d.classes.wWindow;
 import jworldsim3d.enums.gui.wGuiCallerType;
 import jworldsim3d.enums.gui.wGuiDefaultColor;
+import jworldsim3d.jWorldSim3D;
 import jworldsim3d.structs.gui.wGuiEvent;
 import jworldsim3d.structs.wColor4s;
 import jworldsim3d.structs.math.wVector2i;
@@ -29,6 +30,7 @@ public class Example02 {
         int prevFps = 0, curFps;
         String wndCaption = "Example 02: 2D Images / Sprites ";
         
+        jWorldSim3D.init();
         if (!wEngine.start()) {
             System.out.println("wEngineStart() failed!");
             return;

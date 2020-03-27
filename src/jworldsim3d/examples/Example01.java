@@ -1,4 +1,4 @@
-package examples;
+package jworldsim3d.examples;
 
 import jworldsim3d.classes.wEngine;
 import jworldsim3d.classes.wFont;
