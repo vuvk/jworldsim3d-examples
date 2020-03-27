@@ -34,15 +34,15 @@ public class Example02 {
             return;
         }
 
-        wFont myFont = new wFont("Cyr.xml");    
+        wFont myFont = new wFont("Assets/Fonts/Cyr.xml");    
     
         ///Variables
-        wTexture Planet          = new wTexture("planet_1.png");
-        wTexture Alien_face      = new wTexture("Face_alien.png");
-        wTexture Crosshair       = new wTexture("crosshair.png");
-        wTexture Power_icon      = new wTexture("power.png");
-        wTexture Teleport_icon   = new wTexture("teleport.png");
-        wTexture Worldsim3d_logo = new wTexture("WS3D_Logo.png");
+        wTexture Planet          = new wTexture("Assets/Sprites/planet_1.png");
+        wTexture Alien_face      = new wTexture("Assets/Sprites/Face_alien.png");
+        wTexture Crosshair       = new wTexture("Assets/Sprites/crosshair.png");
+        wTexture Power_icon      = new wTexture("Assets/Sprites/power.png");
+        wTexture Teleport_icon   = new wTexture("Assets/Sprites/teleport.png");
+        wTexture Worldsim3d_logo = new wTexture("Assets/Sprites/WS3D_Logo.png");
         
         wVector2i fromPos = new wVector2i();
         wVector2i toPos   = new wVector2i();

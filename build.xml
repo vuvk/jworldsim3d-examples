@@ -10,6 +10,19 @@
 <project name="jWorldSim3D_Examples" default="default" basedir=".">
     <description>Builds, tests, and runs the project jWorldSim3D_Examples.</description>
     <import file="nbproject/build-impl.xml"/>
+    
+    <import file="nbproject/build-impl.xml"/>
+	<!-- copy my files -->
+	<target name="-post-jar">
+		<copy file="win/x86/d3dx9_33.dll" flatten="true" todir="${dist.dir}/win/x86/"/>
+		<copy file="win/x86/OpenAL32.dll" flatten="true" todir="${dist.dir}/win/x86/"/>
+		<copy file="win/x86/wrap_oal.dll" flatten="true" todir="${dist.dir}/win/x86/"/>
+		<copy file="win/x86/WS3DCoreLib.dll" flatten="true" todir="${dist.dir}/win/x86/"/>
+		
+		<copy file="win/x86_64/libwinpthread-1.dll" flatten="true" todir="${dist.dir}/win/x86_64/"/>
+		<copy file="win/x86_64/OpenAL32_x64.dll" flatten="true" todir="${dist.dir}/win/x86_64/"/>
+		<copy file="win/x86_64/WS3DCoreLib64.dll" flatten="true" todir="${dist.dir}/win/x86_64/"/>		
+	</target>
     <!--
 
     There exist several targets which are by default empty and which can be 

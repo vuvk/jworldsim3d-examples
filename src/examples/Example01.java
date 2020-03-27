@@ -4,6 +4,7 @@ import jworldsim3d.classes.wEngine;
 import jworldsim3d.classes.wFont;
 import jworldsim3d.classes.wScene;
 import jworldsim3d.classes.wWindow;
+import jworldsim3d.jWorldSim3D;
 import jworldsim3d.structs.wColor4s;
 import jworldsim3d.structs.math.wVector2i;
 
@@ -17,13 +18,15 @@ import jworldsim3d.structs.math.wVector2i;
  */
 public class Example01 {
 
-    public static void main(String[] args) {    
+    public static void main(String[] args) {  
         int prevFps = 0, curFps;   
         String wndCaption = "Example 01";
         
+        jWorldSim3D.init();
+        
         wEngine.start();
         
-        wFont font = new wFont("myfont.bmp");
+        wFont font = new wFont("Assets/Fonts/myfont.bmp");
         wVector2i fromPos  = new wVector2i(120, 80);
         wVector2i toPos    = new wVector2i(250, 96);
         wColor4s backColor = wColor4s.ORANGE;
